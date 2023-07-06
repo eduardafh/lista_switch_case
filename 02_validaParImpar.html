@@ -5,9 +5,17 @@
     */
 
     //ENTRADA
+    const num = Number(prompt(`Informe um numero inteiro`).trim())
 
-    
     //PROCESSAMENTO
+    switch (num % 2) {
+        case 0:
+            alert(`Par`)
+            break;
+        default:
+            alert(`Ímpar`)
+            break;
+    }
 
     
     //SAÍDA

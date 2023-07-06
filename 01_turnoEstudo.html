@@ -12,11 +12,30 @@
     */
 
     //ENTRADA
-    
-    
-    //PROCESSAMENTO
+    const periodo = prompt(`Em q periodo vc estuda? M-matutino ou V-Vespertino ou N- Noturno.`).trim().toUpperCase()
 
-    
+    //PROCESSAMENTO
+    switch (periodo) {
+        case "M":
+            alert(`Bom dia`)
+            break
+
+        case "V":
+            alert(`Boa tarde`)
+            break
+
+        case "N":
+            alert(`Boa noite`)
+            break
+
+        default:
+            alert(`Valor Inválido`)
+
+    }
+
+
+
+
     //SAÍDA
 
 </script>

@@ -6,10 +6,62 @@
     */
 
     //ENTRADA
+    const hemisferio = prompt("Qual hemisferio vc se localiza? Responda com N-Norte e S-Sul").toUpperCase()
+    const mes = Number(prompt("Informe o mes q vc esta, com numeros, por exemplo 1-janeiro, 2- fevereiro..."))
 
-    
     //PROCESSAMENTO
-
+    switch (hemisferio) {
+        case "S":
+            switch (mes) {
+                case 1:
+                case 2:
+                case 3:
+                    alert(`Verao`)
+                    break;
+                case 4:
+                case 5:
+                case 6:
+                    alert(`Outono`)
+                    break;
+                case 7:
+                case 8:
+                case 9:
+                    alert(`Inverno`)
+                    break;
+                case 10:
+                case 11:
+                case 12:
+                    alert(`Primavera`)
+                    break;
+            }
+            break;
+    }
+    switch (hemisferio) {
+        case "N":
+            switch (mes) {
+                case 1:
+                case 2:
+                case 3:
+                    alert(`Inverno`)
+                    break;
+                case 4:
+                case 5:
+                case 6:
+                    alert(`Primavera`)
+                    break;
+                case 7:
+                case 8:
+                case 9:
+                    alert(`Verao`)
+                    break;
+                case 10:
+                case 11:
+                case 12:
+                    alert(`Primavera`)
+                    break;
+            }
+        break
+    }
 
     //SAÍDA
 

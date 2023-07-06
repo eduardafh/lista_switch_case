@@ -8,10 +8,21 @@
     // - cães grandes: fator 7.
 
     // ENTRADA
+    const idadeCao = Number(prompt(`Qual a idade de seu cao?`).trim())
+    const porte = prompt(`Qual o porte do seu cao? P-Pequeno; M-Medio ou G-Grande`).trim().toUpperCase()
 
-    
     // PROCESSAMENTO
-
+    switch (porte) {
+        case "P":
+            alert (`A idade real do seu cachorro é de ${idadeCao * 5} anos`) 
+            break;
+        case "M":
+            alert (`A idade real do seu cachorro é de ${idadeCao * 6} anos`) 
+            break;
+        default:
+            alert(`A idade real do seu cachorro é de ${idadeCao * 7} anos`)
+            break;
+    }
     
     // SAÍDA
 

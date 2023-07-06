@@ -8,11 +8,58 @@
     */
 
     //ENTRADA
-
+      const num1= Number(prompt(`Informe um número`).trim().replace(",","."))
+    const num2= Number(prompt(`Informe um número novamente`).trim().trim().replace(",","."))
+    const op= (prompt(`Informe a operação que deseja realizar. Utilize +(soma), -(subtração), *(multiplicação) e /(divisão`).trim().trim().replace(",","."))
 
     //PROCESSAMENTO
-
+    let mensagemfinal=`O valor da ${op} será de `
+    let rs = 0;
+    switch (op) {
+        case "+":
+            rs = num1 + num2
+            mensagemfinal+= `${rs}`
+            break;
+        case "-":
+            rs = num1 - num2
+            mensagemfinal+= `${rs}`
+            break;
+        case "*":
+            rs = num1 * num2
+            mensagemfi+= `${rs}`
+            break;
+        case "+":
+            rs = num1 / num2
+            mensagemfinal+= `${rs}`
+            break;
+        default:
+            break;
+    }
+    switch (rs % 2) {
+        case 0:
+            mensagemfinal+=`, sendo ele par`
+            break;
+        default:
+        mensagemfinal+=`, sendo ele ímpar`
+            break;
+    }
+    switch (rs > 0) {
+        case true:
+            mensagemfinal+=`, positivo`
+            break;
+        default:
+        mensagemfinal+=`, negativo`
+            break;
+    }
+    switch (Number.isInteger(rs)) {
+        case true:
+            mensagemfinal+=` e inteiro.`
+            break;
+        default:
+        mensagemfinal+=` e decimal.`
+            break;
+    }
     
-    //SAÍDA
-
+    //SAIDA
+    alert(mensagemfinal)
 </script>
